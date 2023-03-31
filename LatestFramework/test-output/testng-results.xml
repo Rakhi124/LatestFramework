@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-31T17:35:47 IST" name="Suite" finished-at="2023-03-31T17:36:17 IST" duration-ms="30615">
+    <groups>
+      <group name="Sanity">
+        <method signature="HomePageTest.validateProfileColor(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" name="validateProfileColor" class="com.keka.testcases.HomePageTest"/>
+        <method signature="LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" name="loginTest" class="com.keka.testcases.LoginPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="HomePageTest.validateProfileColor(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" name="validateProfileColor" class="com.keka.testcases.HomePageTest"/>
+        <method signature="LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" name="loginTest" class="com.keka.testcases.LoginPageTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="HomePageTest.validateProfileColor(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" name="validateProfileColor" class="com.keka.testcases.HomePageTest"/>
+        <method signature="LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" name="loginTest" class="com.keka.testcases.LoginPageTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-03-31T17:35:47 IST" name="Smoke" finished-at="2023-03-31T17:36:17 IST" duration-ms="30615">
+      <class name="com.keka.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" started-at="2023-03-31T17:36:01 IST" name="setup" finished-at="2023-03-31T17:36:04 IST" duration-ms="3528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateProfileColor(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" started-at="2023-03-31T17:36:04 IST" name="validateProfileColor" data-provider="credentials" finished-at="2023-03-31T17:36:17 IST" duration-ms="12892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rakhi.r@techversantinfotech.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ayaan@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProfileColor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.keka.testcases.HomePageTest@37313c65]" started-at="2023-03-31T17:36:17 IST" name="tearDown" finished-at="2023-03-31T17:36:17 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.keka.testcases.HomePageTest -->
+      <class name="com.keka.testcases.LoginPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" started-at="2023-03-31T17:35:46 IST" name="loadConfig" finished-at="2023-03-31T17:35:47 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" started-at="2023-03-31T17:35:47 IST" name="setup" finished-at="2023-03-31T17:35:51 IST" duration-ms="4195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" started-at="2023-03-31T17:35:52 IST" name="loginTest" data-provider="credentials" finished-at="2023-03-31T17:36:00 IST" duration-ms="8769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rakhi.r@techversantinfotech.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ayaan@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" started-at="2023-03-31T17:36:00 IST" name="tearDown" finished-at="2023-03-31T17:36:01 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.keka.testcases.LoginPageTest@5a7fe64f]" started-at="2023-03-31T17:36:17 IST" name="afterSuite" finished-at="2023-03-31T17:36:18 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.keka.testcases.LoginPageTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Suite -->
+</testng-results>

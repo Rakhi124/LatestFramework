@@ -17,8 +17,12 @@
 			<class name="com.keka.testcases.LoginPageTest" />
 		</classes>
 	</test>
+	<!--Support for Internet Explorer ended on June 15, 2022
+Internet Explorer 11 has been permanently disabled through a Microsoft Edge update
+on certain versions of Windows 10. If any site you visit needs Internet Explorer 11, 
+you can reload it with Internet Explorer mode in Microsoft Edge.-->
 
-<!-- 	<test name="IETest">
+	<!-- 	<test name="IETest">
 		<parameter name="browser" value="IE"></parameter>
 		<classes>
 			<class name="com.keka.testcases.LoginPageTest" />

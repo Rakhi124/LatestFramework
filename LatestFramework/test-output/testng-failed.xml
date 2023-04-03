@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="com.keka.utility.ListenerClass"/>
   </listeners>
-  <test thread-count="6" parallel="tests" name="IETest(failed)">
-    <parameter name="browser" value="IE"/>
+  <test thread-count="6" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="com.keka.testcases.LoginPageTest">
         <methods>
-          <include name="loginTest"/>
           <include name="loadConfig"/>
+          <include name="loginTest"/>
           <include name="setup"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.keka.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- IETest(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowser] -->

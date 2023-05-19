@@ -4,23 +4,23 @@
   <listeners>
     <listener class-name="com.keka.utility.ListenerClass"/>
   </listeners>
-  <test thread-count="5" name="Sanity(failed)">
+  <test thread-count="5" name="Smoke(failed)">
     <parameter name="browser" value="Chrome"/>
     <groups>
       <run>
-        <include name="Sanity"/>
+        <include name="Smoke"/>
       </run>
     </groups>
     <classes>
-      <class name="com.keka.testcases.MyTeamPageTest">
+      <class name="com.keka.testcases.LoginPageTest">
         <methods>
           <include name="loadConfig"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="afterSuite"/>
-          <include name="validateEmployeeDirectoryPage" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.keka.testcases.MyTeamPageTest -->
+      </class> <!-- com.keka.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Sanity(failed) -->
+  </test> <!-- Smoke(failed) -->
 </suite> <!-- Failed suite [Suite] -->

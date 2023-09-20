@@ -4,23 +4,68 @@
   <listeners>
     <listener class-name="com.keka.utility.ListenerClass"/>
   </listeners>
-  <test thread-count="5" name="Smoke(failed)">
+  <test thread-count="5" name="Regression(failed)">
     <parameter name="browser" value="Chrome"/>
     <groups>
       <run>
-        <include name="Smoke"/>
+        <include name="Regression"/>
       </run>
     </groups>
     <classes>
       <class name="com.keka.testcases.LoginPageTest">
         <methods>
           <include name="loadConfig"/>
-          <include name="loginTest" invocation-numbers="0"/>
+          <include name="loginTest"/>
           <include name="setup"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.keka.testcases.LoginPageTest -->
+      <class name="com.keka.testcases.MyFinancePageTest">
+        <methods>
+          <include name="validateSummaryPage"/>
+          <include name="loadConfig"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.keka.testcases.MyFinancePageTest -->
+      <class name="com.keka.testcases.MyTeamPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateEmployeeDirectoryPage"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.keka.testcases.MyTeamPageTest -->
+      <class name="com.keka.testcases.OrgPageTest">
+        <methods>
+          <include name="validateEmployeeDirectoryPage"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.keka.testcases.OrgPageTest -->
+      <class name="com.keka.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="validateProfileColor"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.keka.testcases.HomePageTest -->
+      <class name="com.keka.testcases.MyProfilePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="validateMyProfilePage"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.keka.testcases.MyProfilePageTest -->
     </classes>
-  </test> <!-- Smoke(failed) -->
+  </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->
